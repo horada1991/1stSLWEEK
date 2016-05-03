@@ -7,5 +7,6 @@ def printwithname(name):
         print(" " + i, end = "")
     print("!")
 
-name = sys.argv[1:]      #Slice down the name of the script
+#Slicing down the name of the script
+name = sys.argv[1:]
 print("Hello World!") if len(name) == 0 else printwithname(name)
