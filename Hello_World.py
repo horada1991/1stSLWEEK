@@ -7,8 +7,5 @@ def printwithname(name):
         print(" " + i, end = "")
     print("!")
 
-name = sys.argv[1:]             #Slice down the name of the script
-if len(name) == 0:              #If there's no elements in tha list called name
-    print("Hello World!")
-else:
-    printwithname(name)
+name = sys.argv[1:]      #Slice down the name of the script
+print("Hello World!") if len(name) == 0 else printwithname(name)
