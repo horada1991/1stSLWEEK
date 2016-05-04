@@ -3,7 +3,7 @@ import sys
 def printwithname(name):
     if len(name) == 0:
         name = ["World"]
-    print("Hello", end="")
+    print("Hello", end = "")
     for i in name:
         print(" " + i, end = "")
     print("!")

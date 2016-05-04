@@ -2,9 +2,9 @@
 while 1:
     number1 = input("Enter a number (or a letter to" + "\033[1m" +
                 " exit" + "\033[0m" + "): ")
+    #IF there's any not_number character in the input,
+    #than breaking the infinite while loop!
     if not number1.isdigit():
-        #IF there's any not_number character in the input,
-        #than breaking the infinite while loop!
         break
     else:
         operation = input("Enter an operation: ")
