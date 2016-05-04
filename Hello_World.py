@@ -7,6 +7,6 @@ def printwithname(name):
         print(" " + i, end = "")
     print("!")
 
-#Slicing down the name of the script
-name = sys.argv[1:]
-print("Hello World!") if len(name) == 0 else printwithname(name)
+printwithname(sys.argv[1:]) if sys.argv[1:] else print("Hello World!")
+#It could be solved in one logical line by the .join funct
+# but you asked for a new definied funct :D
