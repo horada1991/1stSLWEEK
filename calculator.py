@@ -1,10 +1,8 @@
 import operator
 
-#dictionary of necessary operations
 operators = {"+" : operator.add, "-" : operator.sub,
             "*" : operator.mul, "/" : operator.truediv}
 
-#infinite loop
 while 1:
     number1 = input("Enter a number (or a letter to" + "\033[1m" +
                 " exit" + "\033[0m" + "): ")
@@ -20,6 +18,6 @@ while 1:
         #Catch KeyErrors (No valid opertion given)
         except KeyError:
             print("Please enter a valid operation!\n")
-        #Catch ValueErrors (if the 'number2' contains letters too.)
+        #if the 'number2' contains letters too.
         except ValueError:
             print("I can only do calculation with numbers! THANK YOU!\n")
