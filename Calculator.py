@@ -11,15 +11,16 @@ while 1:
         number2 = input("Enter another number: ")
         try:
             if operation == "+":
-                print(int(number1) + int(number2))
+                print("Result:", int(number1) + int(number2), "\n")
             elif operation == "*":
-                print(int(number1) * int(number2))
+                print("Result:", int(number1) * int(number2), "\n")
             elif operation == "-":
-                print(int(number1) - int(number2))
+                print("Result:", int(number1) - int(number2), "\n")
             elif operation == "/":
-                print(int(number1) / int(number2))
+                print("Result:", int(number1) / int(number2), "\n")
             else:
                 #If there's no valid operation input, than write this
-                print("Please enter a valid operation!")
+                print("Please enter a valid operation!\n")
+        #Catch errors (ValueError: if the 'number2' contains letters too.)
         except:
-            print("I can do calculation only with numbers! THANK YOU!")
+            print("I can only do calculation with numbers! THANK YOU!\n")
